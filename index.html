@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.1/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="asset1" src="./models/bot/scene.gltf"></a-asset-item>
+            <a-asset-item id="asset2" src="./models/car/scene.gltf"></a-asset-item>
+
+        </a-assets>
+        
+        <a-entity gltf-model="#asset1" position = "0 0 3" size = "1 1 1"></a-entity>
+        <a-entity gltf-model="#asset2" position = "0 0 3" size = "6 1 1"></a-entity>
+
+        
+    </a-scene>
+    
+</body>
+</html>
